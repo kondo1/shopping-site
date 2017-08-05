@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+html {
+font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+font-size: $size + px;
+font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$basecolor : #f9f8f6; //薄黄土色
+$subcolor  : #ffffff; //白
+$keycolor  : #887f69; //濃黄土色
+
+//body共通----------------------------------------------------------------------
+body{
+  background: $basecolor;
+  li{
+    list-style: none;
+  }
+}
+//body共通----------------------------------------------------------------------
+//header------------------------------------------------------------------------
+header{
+  padding-top: 30px;
+
+  @media (min-width: 551px) { //PCver
+    .logo{
+      width: 100%;
+    }
+    ul{
+      padding-top: 25px;
+      text-align: right;
+    }
+    li{
+      display: inline;
+      margin-left: 1em;
+    }
+  }
+}
+//header------------------------------------------------------------------------
+//items--------------------------------------------------------------------------
+#items{
+  .new_items {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .container_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }  
+  .item_box{
+    margin-bottom: 1rem;
+  	padding: 1rem;
+  	width: 30%;
+  	background-color: $subcolor;
+    
+    img {
+      display: block;
+	    margin-bottom: 3rem;
+	    width: 100%;
+	    height: auto;
+    }
+  }
+}
+//items-------------------------------------------------------------------------
+//guide-------------------------------------------------------------------------
+#guide{
+  .shopping_guide{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .container_guide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .guide_box{
+    margin-bottom: 1rem;
+	  padding: 1rem;
+	  width: 45%;
+	  background-color: $subcolor;
+  }
+  h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: $keycolor;
+  }
+  h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: $keycolor;
+  }
+  img {
+    display: block;
+	  margin-bottom: 3rem;
+	  width: 100%;
+	  height: auto;
+  }
+  .otodoke{
+    img{
+    width: 50%;
+    }
+  }
+}
+//guide-------------------------------------------------------------------------
+//side_menu---------------------------------------------------------------------
+#side_menu{
+  .popular_items{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .search_box{
+    margin-bottom: 1rem;
+	  padding: 1rem;
+	  width: 90.5%;
+	  background-color: $subcolor;
+  }
+
+  .about{
+    img{
+      padding-left: 1rem;
+    }
+    background-color:$keycolor;
+  }
+  .about_box{
+	  padding: 1rem;
+	  width: 90.5%;
+	  background-color: $subcolor;
+  }
+  .shop_info{
+    img{
+      padding-left: 1rem;
+    }
+    background-color:$keycolor;
+  }
+  .shopinfo_box{
+    margin-bottom: 1rem;
+	  padding: 1rem;
+	  width: 90.5%;
+	  background-color: $subcolor;
+  }
+  .about_box{
+    img{
+	    margin-bottom: 1rem;
+	    width: 100%;
+	    height: auto;
+    }
+    .more{
+      img{
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .shopinfo_box{
+    img{
+	    margin-bottom: 1rem;
+	    width: 100%;
+	    height: auto;
+    }
+    .more{
+      img{
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+//side_menu---------------------------------------------------------------------
+//footer------------------------------------------------------------------------
+#footer_contenst{
+  text-align: center;
+  .page_top{
+    margin-top: 20px;
+    text-align: right;
+  }  
+  .footer_line{
+    border-bottom: solid  $keycolor ;
+  }
+  .footer_li{
+    padding-top: 15px;
+  }
+  li{
+    display: inline;
+  }
+}
+
+//footer------------------------------------------------------------------------

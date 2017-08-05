@@ -1,0 +1,125 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background: #f9f8f6; }
+  body li {
+    list-style: none; }
+
+header {
+  padding-top: 30px; }
+  @media (min-width: 551px) {
+    header .logo {
+      width: 100%; }
+    header ul {
+      padding-top: 25px;
+      text-align: right; }
+    header li {
+      display: inline;
+      margin-left: 1em; } }
+
+#items .new_items {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+#items .container_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+#items .item_box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 30%;
+  background-color: #ffffff; }
+  #items .item_box img {
+    display: block;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: auto; }
+
+#guide .shopping_guide {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+#guide .container_guide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+#guide .guide_box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 45%;
+  background-color: #ffffff; }
+#guide h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #887f69; }
+#guide h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #887f69; }
+#guide img {
+  display: block;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: auto; }
+#guide .otodoke img {
+  width: 50%; }
+
+#side_menu .popular_items {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+#side_menu .search_box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 90.5%;
+  background-color: #ffffff; }
+#side_menu .about {
+  background-color: #887f69; }
+  #side_menu .about img {
+    padding-left: 1rem; }
+#side_menu .about_box {
+  padding: 1rem;
+  width: 90.5%;
+  background-color: #ffffff; }
+#side_menu .shop_info {
+  background-color: #887f69; }
+  #side_menu .shop_info img {
+    padding-left: 1rem; }
+#side_menu .shopinfo_box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 90.5%;
+  background-color: #ffffff; }
+#side_menu .about_box img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto; }
+#side_menu .about_box .more img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+#side_menu .shopinfo_box img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto; }
+#side_menu .shopinfo_box .more img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+#footer_contenst {
+  text-align: center; }
+  #footer_contenst .page_top {
+    margin-top: 20px;
+    text-align: right; }
+  #footer_contenst .footer_line {
+    border-bottom: solid #887f69; }
+  #footer_contenst .footer_li {
+    padding-top: 15px; }
+  #footer_contenst li {
+    display: inline; }
+
+/*# sourceMappingURL=Ssite.css.map */
