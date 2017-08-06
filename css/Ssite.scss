@@ -25,18 +25,42 @@ body{
 //header------------------------------------------------------------------------
 header{
   padding-top: 30px;
-
-  @media (min-width: 551px) { //PCver
+  .logo{
+    width: 100%;
+  }
+  @media (max-width: 550px) { //SPver
+    .pc_navi{
+      display: none;
+    }
+    .sp_navi{
+      ul{
+        text-align: center;
+        li{
+          display: inline;
+          margin-left: 1em;
+          margin-right: 1em;
+        }
+      }
+    }
     .logo{
-      width: 100%;
+    width: 100%;
+    text-align: center;
     }
-    ul{
-      padding-top: 25px;
-      text-align: right;
+  }
+  @media (min-width: 551px) { //PCver
+    .sp_navi{
+      display: none;
     }
-    li{
-      display: inline;
-      margin-left: 1em;
+    .pc_navi{
+      ul{
+        padding-top: 25px;
+        text-align: right;
+        li{
+          display: inline;
+          margin-left: 1em;
+          margin-right: 0em;
+        }
+      }
     }
   }
 }
@@ -63,6 +87,12 @@ header{
 	    margin-bottom: 3rem;
 	    width: 100%;
 	    height: auto;
+    }
+  }
+  @media (max-width: 550px) { //SPver
+    .item_box{
+      justify-content: space-between;
+  	  width: 43%;
     }
   }
 }
@@ -105,6 +135,18 @@ header{
     width: 50%;
     }
   }
+  @media (max-width: 550px) { //SPver
+    .container_guide{
+      display: flex;
+      flex-direction: column;
+    }
+    .guide_box{
+      margin-bottom: 1rem;
+	    padding: 1rem;
+	    width: 100%;
+	    background-color: $subcolor;
+    }
+  }
 }
 //guide-------------------------------------------------------------------------
 //side_menu---------------------------------------------------------------------
@@ -113,66 +155,97 @@ header{
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  .itemserch{
+    background-color: $subcolor;
+  }
   .search_box{
     margin-bottom: 1rem;
 	  padding: 1rem;
-	  width: 90.5%;
+	  width: 100%;
 	  background-color: $subcolor;
   }
-
+  ul{
+    li{
+      img{
+      padding: 1rem;
+      padding-top: 1.5rem;
+      }
+      background-color:$keycolor;
+    }
+    .categories{
+      margin-bottom: 0rem;
+    }
+  }
   .about{
     img{
-      padding-left: 1rem;
+      padding: 1rem;
+      padding-top: 1.5rem;
     }
     background-color:$keycolor;
   }
-  .about_box{
-	  padding: 1rem;
-	  width: 90.5%;
-	  background-color: $subcolor;
+  #about_box_01{
+    background-color:$subcolor;
+    .container_about{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }  
+    .about_box{
+      margin-bottom: 1rem;
+  	  background-color: $subcolor;
+  	  padding: 1rem;
+    
+      img {
+        display: block;
+	      width: 100%;
+	      height: auto;
+      }
+      .more{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
   .shop_info{
     img{
-      padding-left: 1rem;
+      padding: 1rem;
+      padding-top: 1.5rem;
     }
     background-color:$keycolor;
   }
-  .shopinfo_box{
-    margin-bottom: 1rem;
-	  padding: 1rem;
-	  width: 90.5%;
-	  background-color: $subcolor;
-  }
-  .about_box{
-    img{
-	    margin-bottom: 1rem;
-	    width: 100%;
-	    height: auto;
-    }
-    .more{
-      img{
+  #shop_info_01{
+    background-color:$subcolor;
+    .container_info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }  
+    .shopinfo_box{
+      margin-bottom: 1rem;
+  	  background-color: $subcolor;
+  	  padding: 1rem;
+    
+      img {
         display: block;
+	      width: 100%;
+	      height: auto;
+      }
+      .more{
         width: 50%;
-        height: auto;
         margin-left: auto;
         margin-right: auto;
       }
     }
   }
-  .shopinfo_box{
-    img{
-	    margin-bottom: 1rem;
-	    width: 100%;
-	    height: auto;
+  @media (max-width: 550px) { //SPver
+    .about_box{
+      justify-content: space-between;
+  	  width: 40%;
     }
-    .more{
-      img{
-        display: block;
-        width: 50%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .shopinfo_box{
+      justify-content: space-between;
+  	  width: 40%;
     }
   }
 }
@@ -194,5 +267,4 @@ header{
     display: inline;
   }
 }
-
 //footer------------------------------------------------------------------------

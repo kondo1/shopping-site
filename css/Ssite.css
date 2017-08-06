@@ -8,15 +8,30 @@ body {
 
 header {
   padding-top: 30px; }
-  @media (min-width: 551px) {
+  header .logo {
+    width: 100%; }
+  @media (max-width: 550px) {
+    header .pc_navi {
+      display: none; }
+    header .sp_navi ul {
+      text-align: center; }
+      header .sp_navi ul li {
+        display: inline;
+        margin-left: 1em;
+        margin-right: 1em; }
     header .logo {
-      width: 100%; }
-    header ul {
+      width: 100%;
+      text-align: center; } }
+  @media (min-width: 551px) {
+    header .sp_navi {
+      display: none; }
+    header .pc_navi ul {
       padding-top: 25px;
       text-align: right; }
-    header li {
-      display: inline;
-      margin-left: 1em; } }
+      header .pc_navi ul li {
+        display: inline;
+        margin-left: 1em;
+        margin-right: 0em; } }
 
 #items .new_items {
   padding-top: 15px;
@@ -35,6 +50,10 @@ header {
     margin-bottom: 3rem;
     width: 100%;
     height: auto; }
+@media (max-width: 550px) {
+  #items .item_box {
+    justify-content: space-between;
+    width: 43%; } }
 
 #guide .shopping_guide {
   padding-top: 15px;
@@ -63,52 +82,86 @@ header {
   height: auto; }
 #guide .otodoke img {
   width: 50%; }
+@media (max-width: 550px) {
+  #guide .container_guide {
+    display: flex;
+    flex-direction: column; }
+  #guide .guide_box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: #ffffff; } }
 
 #side_menu .popular_items {
   padding-top: 15px;
   padding-bottom: 15px; }
+#side_menu .itemserch {
+  background-color: #ffffff; }
 #side_menu .search_box {
   margin-bottom: 1rem;
   padding: 1rem;
-  width: 90.5%;
+  width: 100%;
   background-color: #ffffff; }
+#side_menu ul li {
+  background-color: #887f69; }
+  #side_menu ul li img {
+    padding: 1rem;
+    padding-top: 1.5rem; }
+#side_menu ul .categories {
+  margin-bottom: 0rem; }
 #side_menu .about {
   background-color: #887f69; }
   #side_menu .about img {
-    padding-left: 1rem; }
-#side_menu .about_box {
-  padding: 1rem;
-  width: 90.5%;
+    padding: 1rem;
+    padding-top: 1.5rem; }
+#side_menu #about_box_01 {
   background-color: #ffffff; }
+  #side_menu #about_box_01 .container_about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #side_menu #about_box_01 .about_box {
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 1rem; }
+    #side_menu #about_box_01 .about_box img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    #side_menu #about_box_01 .about_box .more {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; }
 #side_menu .shop_info {
   background-color: #887f69; }
   #side_menu .shop_info img {
-    padding-left: 1rem; }
-#side_menu .shopinfo_box {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  width: 90.5%;
+    padding: 1rem;
+    padding-top: 1.5rem; }
+#side_menu #shop_info_01 {
   background-color: #ffffff; }
-#side_menu .about_box img {
-  margin-bottom: 1rem;
-  width: 100%;
-  height: auto; }
-#side_menu .about_box .more img {
-  display: block;
-  width: 50%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto; }
-#side_menu .shopinfo_box img {
-  margin-bottom: 1rem;
-  width: 100%;
-  height: auto; }
-#side_menu .shopinfo_box .more img {
-  display: block;
-  width: 50%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto; }
+  #side_menu #shop_info_01 .container_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #side_menu #shop_info_01 .shopinfo_box {
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 1rem; }
+    #side_menu #shop_info_01 .shopinfo_box img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    #side_menu #shop_info_01 .shopinfo_box .more {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; }
+@media (max-width: 550px) {
+  #side_menu .about_box {
+    justify-content: space-between;
+    width: 40%; }
+  #side_menu .shopinfo_box {
+    justify-content: space-between;
+    width: 40%; } }
 
 #footer_contenst {
   text-align: center; }
