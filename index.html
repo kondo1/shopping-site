@@ -71,7 +71,7 @@
 <!-- main_top_banner_items -->
 <div id="cover_area">
   <div class="container">
-    <div class= "row">
+    <div ls= "row">
       <div class= "nine columns">
         <!-- top_banner -->
         <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/>
@@ -190,11 +190,16 @@
           <div id="side_menu">
             <div class="itemserch">
               <img src="images/top/itemserch.png" alt=""/>
-            </div>
-              <form class="serch_box">
-                <input type="search" name="search" placeholder="search..">
-                <input type="submit" name="submit"  img src="images/top/search_icon.png"/> <!--分からん(´・ω・`)-->
+            
+              <form id= "search_box_main" action="#"  method="post">
+                <div class="keyword_01">
+                  <input id = "keyword_01_01" type="search"  placeholder="search.."/>
+                </div>
+                <div class="keyword_02">
+                  <input type="image" src="images/top/search_icon.png" alt="sarch" />
+                </div>
               </form>
+              </div>
             
             <div class="side_navi">
               <ul class="side_navi_li">

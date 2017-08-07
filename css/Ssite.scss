@@ -77,7 +77,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }  
+  } 
   .item_box{
     margin-bottom: 1rem;
   	padding: 1rem;
@@ -188,12 +188,41 @@ header{
 //side_menu---------------------------------------------------------------------
 #side_menu{
   .itemserch{
+    height: 60px;
     padding: 1rem;
     background-color: $subcolor;
   }
-  .serch_box{
-    margin-bottom: 1rem;
-	  background-color: $subcolor;
+  #search_box_main{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbb;
+  }
+  .keyword_01{
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    input[type = search] {
+      border: none; 
+      width: 90%;
+      color: #fff;
+      background-color: #bbb;
+    }
+    #keyword_01_01{
+      color: #fff;
+    }
+  }
+  .keyword_02{ 
+    width: 20%;
+    height: auto;
+    input{
+    display: block;
+    margin-left: auto;
+    margin-right: 3px;
+    }
   }
   ul{
     li{
