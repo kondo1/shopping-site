@@ -27,6 +27,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="images/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="images/owlcarousel/assets/owl.theme.default.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="images/owlcarousel/owl.carousel.min.js"></script>
+        
+        <!-- Owl Carouselを動作させるために追加 -->
+        <script src="s_carousel.js"></script>
 </head>
 <body>
 
@@ -36,7 +46,7 @@
     <div class = "row">
       <!-- main_Logo -->
       <div class="six columns logo">
-        <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="Apple Berry" srcset="images/top/logo@2x.png 2x" /></a></h1>
+        <h2><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="Apple Berry" srcset="images/top/logo@2x.png 2x" /></a></h2>
       </div>
       <!-- main_Logo -->
       <!-- main_menu -->
@@ -74,7 +84,12 @@
     <div ls= "row">
       <div class= "nine columns">
         <!-- top_banner -->
-        <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/>
+        <div class="owl-carousel owl-theme">
+          <div> <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/> </div>
+          <div> <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/> </div>
+          <div> <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/> </div>
+          <div> <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt="main_00"/> </div>
+        </div>
         <!-- top_banner -->
         <div id="items">
           <div class= "new_items new_items_01"><img class="u-max-full-width" src="images/top/title_newitems.png" alt="main_01"/></div>
@@ -203,7 +218,8 @@
             
             <div class="side_navi">
               <ul class="side_navi_li">
-                <li class="pagelink"><a href="index.html"><img src="images/top/pagelink.png" alt="pagelink"/></a></li>
+                <li class="pagelink"><a href="index.html">
+                  <div class="left"><img src="images/top/pagelink.png" alt="pagelink"/></div>
                 <li class="categories"><a href="index.html"><img src="images/top/categories.png" alt="categories"/></a></li>
                 <li class="categories_01">カテゴリー名</li>
                 <li class="categories_01">カテゴリー名</li>
